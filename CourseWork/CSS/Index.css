@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Nodesto Cyrillic Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Nodesto Cyrillic Regular"),
+         url(../FONT/Nodesto\ Cyrillic\ Regular.ttf)
+}  
+section img{
+    src: url(../IMG/BG/BG.jpg);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content-box{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(32, 31, 31, 0.61);
+}
+.content-box h1{
+    /*Сменить шрифт*/
+    font-family: "Nodesto Cyrillic Regular";
+    /*размер текста*/
+    /*font-size: 28pt;
+    /*Добавить жирность*/
+    font-weight:100;
+    /*Сделать текст курсивным*/
+    font-style: oblique;
+    /*Преобразовать текст - меняет регистр текста.*/
+    text-transform:none;
+    /*Добавить подчёркивание*/
+    text-decoration: none;
+    /*Создать тень*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /*Выровнять текст*/
+    text-align:center;
+    /*Изменить высоту строки*/
+    line-height: 1.2;
+    /*Изменить межбуквенное расстояние*/
+    letter-spacing: 1px;
+    margin: 5vh;
+}
+@media (max-width: 1980px) {
+    h1 {
+    /*размер текста*/
+    font-size: 28pt;
+    }
+}
+@media (max-width: 1350px) {
+    h1 {
+    /*размер текста*/
+    font-size: 16pt;
+    }
+}
+    @media (max-width: 1050px) {
+        h1 {
+        /*размер текста*/
+        font-size: 14pt;
+        }
+}
+@media (max-width:750px) {
+    h1 {
+    /*размер текста*/
+    font-size: 6pt;
+    }
+}
