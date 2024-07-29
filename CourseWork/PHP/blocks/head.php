@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="../CSS/Main.css">
-    <title>Контакты</title>
+    <link rel="stylesheet" href="<?php echo $StyleThispage ?>">
+    <title><?php echo $title ?></title>
   </head>
   <body>
     <script src="..//JS/Index.js"></script>
@@ -32,27 +33,3 @@
             </ul>
         </div>
     </header>
-    <!--Контент на заглавной странице-->
-    <section>
-        <img src="../IMG/BG/BG.jpg"><img>
-    </section>
-    <!--Подвал сайта-->
-    <footer>
-        <div onclick="HrefOnAbout()">
-            <h6>
-                О Нас.
-            </h6>
-        </div>
-        <div onclick="HrefOnContacts()">
-            <h6>
-                Контакты:
-            </h6>
-        </div>
-        <div onclick="HrefOnSupport()">
-            <h6>
-                Донат
-            </h6>
-        </div>
-    </footer>
-  </body>
-</html>

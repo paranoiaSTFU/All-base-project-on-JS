@@ -1,40 +1,11 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="../CSS/Main.css">
-    <link rel="stylesheet" href="../CSS/Index.css">
-    <title>Добро пожаловать</title>
-  </head>
-  <body>
-    <script src="..//JS/Index.js"></script>
     <!--Шапка сайта-->
-    <header>
-        <!--Блок с иконкой-->
-        <div class="IconSite" onclick="HrefOnIndex()">
-            <img src="..//IMG/Icon/LogoSite.png"/>
-        </div>
-        <!--название сайта-->
-        <div class="NameSite" onclick="HrefOnIndex()">
-                DUNGEONS & DRAGONS
-        </div>
-        <!--навигация-->
-        <div class="NavigationSite">
-            <ul>
-                <li>
-                    <button onclick="HrefOnListOfPlaybleRaces()">Список игровых рас</button>
-                </li>
-                <li>
-                    <button onclick="HrefOnRulesOfTheGame()">Правила игры</button>
-                </li>
-                <li>
-                    <button onclick="HrefOnCharacterSheet()">Лист персонажа</button>
-                </li>
-            </ul>
-        </div>
-    </header>
+<?php
+    $title = "Добро пожаловать";
+    $StyleThispage = "../CSS/Index.css";
+    include "../PHP/blocks/head.php";
+?>
     <!--Контент на заглавной странице-->
-    <section class="box-up">
+    <section>
         <img src="../IMG/BG/BG.jpg">
         <div class=content-box>
             <h1>
@@ -49,22 +20,6 @@
         </div>
     </section>
     <!--Подвал сайта-->
-    <footer>
-        <div onclick="HrefOnAbout()">
-            <h6>
-                О Нас.
-            </h6>
-        </div>
-        <div onclick="HrefOnContacts()">
-            <h6>
-                Контакты:
-            </h6>
-        </div>
-        <div onclick="HrefOnSupport()">
-            <h6>
-                Донат
-            </h6>
-        </div>
-    </footer>
-  </body>
-</html>
+<?php
+    require "../PHP/blocks/footer.php";
+?>

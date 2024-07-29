@@ -122,6 +122,8 @@ header button{
 
 /*Стили основного контента*/
 section{
+    margin: 0px;
+    padding: 0px;
     flex-grow: 1;
     background-color: blanchedalmond;
     position: relative;
